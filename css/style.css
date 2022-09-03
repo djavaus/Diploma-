@@ -182,10 +182,23 @@ body {
       margin-bottom: 0px;
       color: #ffffff;
     text-decoration: none;
-    }  
+    } 
+    
+   .trend_post_h:hover {
+    font-family: Open Bold, sans-serif;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      line-height: 1.2; 
+      margin-top: 0.75rem;
+      margin-bottom: 0px;
+      color: #b59f5b;
+    text-decoration: none;
+   } 
+
    
   .trend_tag_list {
     display:flex;
+    flex-wrap: wrap;
      text-transform: uppercase;
      list-style: none;
      padding: 0px;
@@ -227,6 +240,9 @@ body {
     padding: 0px;
     margin-left: 30px; 
     font-size: 16px;
+    box-sizing: border-box;
+    
+    
   }
   
   .tag {
@@ -261,6 +277,7 @@ body {
   
   .last_post_tag_list {
      display:flex;
+     flex-wrap: wrap;
      text-transform: uppercase;
      list-style: none;
      padding: 0px;
@@ -440,6 +457,11 @@ body {
     border: none;
     background-color:#f4f7f6;
     
+  }
+
+  input:focus {
+    border: 1px solid #b59f5b;
+    outline: #b59f5b;
   }
   
   .tags {
