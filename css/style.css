@@ -16,6 +16,10 @@ body {
       font-style: normal;
   }
   
+  .burger_menu {
+    display: none;
+  }
+
   .header {
    background-image: url(../images/banner-bg.jpg);
     background-repeat: no-repeat;
@@ -126,7 +130,7 @@ body {
   .trend_container {
     display: flex;
     width: 100%;
-    height: 20rem;
+    
     padding-left: 0px;
     padding-right: 0px;
     margin-left: auto;
@@ -138,7 +142,7 @@ body {
   }
 
   .trend_post {
-    
+    height: 20rem;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -271,8 +275,7 @@ body {
   }*/
   
   .img {
-    width: 381px;
-    display: block;
+    box-sizing: border-box;
   }
   
   .last_post_tag_list {
@@ -736,4 +739,118 @@ body {
     font-family: Open Bold;
     font-size: 11px;
   }
+
+@media (min-width: 641px) and (max-width: 1180px) {
+
+  .header {
+    min-width: 100%;
+    background-image: url(../images/banner-bg-tablet.jpg);
+      }
+
+   .header_content {
+    min-width: 641px;
+    max-width: 1180px;
+    box-sizing: border-box;
+      
+   }
+   .logo {
+    float: none;
+    line-height: 22px;
+    margin-left: 20px;
+    z-index: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+  
+  .burger_menu {
+    padding-top: 5px;
+    display: flex;
+    align-self: flex-end;
+    
+  }
+
+  .menu_item {
+    display: none;
+  }  
+
+  .trend_container {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+
+  .trend_post {
+    width: calc(50% - 3px);
+    
+  }
+
+  .trend_post {
+    height: 16rem;
+  }
+
+  .post_four, .post_three {
+    margin-top: 3px;
+    
+  }
+
+  .content_wrap {
+    min-width: 641px;;
+    max-width: 700px;
+    box-sizing: border-box;
+    padding: 0px;
+            
+  }
+
+  .last_post {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 390px;
+    padding: 0px;
+  }
+
+  .last_post_header {
+    padding: 0px;
+    margin: 0px;
+  
+  }
+
+.aside {
+    margin: 0px;
+  }
+
+.shop_content {
+  min-width: 641px;
+  max-width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 35px;
+  padding-right: 35px;
+    
+}
+
+.shop_item {
+  width: calc(50%-12.5px);
+}
+
+.shop_item:nth-child(n+3) {
+  margin-top: 25px;
+}
+
+.item_cont {
+  width: calc(50%-12.5px);
+}
+
+.footer_wrapper {
+    padding: 0px;
+    min-width: 641px;
+    width: 700px;
+    box-sizing: border-box;
+  
+  }
+
+
+
+
+}
 
